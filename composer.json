@@ -1,0 +1,44 @@
+{
+    "name": "baskoro/cf-cache",
+    "description": "Laravel cache driver using Cloudflare KV",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Risang Baskoro",
+            "email": "contact@risangbaskoro.com"
+        }
+    ],
+    "support": {
+        "email": "contact@risangbaskoro.com",
+        "issues": "https://github.com/kasirphp/kasir/issues",
+        "forum": "https://github.com/kasirphp/kasir/discussions",
+        "wiki": "https://github.com/kasirphp/kasir/wiki"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/risangbaskoro"
+        }
+    ],
+    "require": {
+        "saloonphp/saloon": "^3.14"
+    },
+    "require-dev": {
+        "illuminate/support": "^12.38",
+        "laravel/pint": "^1.25"
+    },
+    "autoload": {
+        "psr-4": {
+            "Baskoro\\CloudflareCache\\": "src/",
+            "Baskoro\\CloudflareCache\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Baskoro\\CloudflareCache\\CloudflareServiceProvider"
+            ]
+        }
+    }
+}
